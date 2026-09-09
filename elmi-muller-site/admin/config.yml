@@ -6,8 +6,8 @@ backend:
 media_folder: "images"
 public_folder: "/images"
 
-site_url: https://example.netlify.app   # TODO: replace after deploy
-display_url: https://example.netlify.app
+site_url: https://elmimuller.netlify.app   # TODO: replace after deploy
+display_url: https://elmimuller.netlify.app
 
 collections:
   - name: "site"
