@@ -21,6 +21,7 @@ collections:
                 { label: "Eyebrow", name: "eyebrow", widget: "string" },
                 { label: "Headline", name: "title", widget: "string" },
                 { label: "Subheadline", name: "subtitle", widget: "text" },
+                { label: "Background photo", name: "image", widget: "image", required: false, hint: "Full-width photo behind the headline. Landscape, at least 1600px wide works best." },
               ] }
           - label: "Stats strip (4 numbers)"
             name: "stats"
