@@ -34,6 +34,12 @@ async function renderHome() {
   const data = await loadJSON('content/site.json');
   if (!data) return;
 
+  const heroSection = document.querySelector('[data-hero-section]');
+  if (heroSection && data.hero && data.hero.image) {
+    heroSection.style.backgroundImage =
+      `url('${data.hero.image}')`;
+  }
+
   const heroTitle = document.querySelector('[data-hero-title]');
   const heroSub = document.querySelector('[data-hero-sub]');
   const heroEyebrow = document.querySelector('[data-hero-eyebrow]');
@@ -193,3 +199,4 @@ document.addEventListener('DOMContentLoaded', () => {
   renderTalksPage();
   renderEventsPage();
 });
+
