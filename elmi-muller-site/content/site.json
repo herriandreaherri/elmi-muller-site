@@ -2,7 +2,8 @@
   "hero": {
     "eyebrow": "Transplant Surgeon, Speaker & Academic Leader",
     "title": "Some ideas are worth breaking the rules for.",
-    "subtitle": "Elmi Muller pioneered a transplant programme the textbooks said couldn't work — and changed how the world thinks about risk, leadership and doing the right thing when the rules don't fit the problem."
+    "subtitle": "Elmi Muller pioneered a transplant programme the textbooks said couldn't work — and changed how the world thinks about risk, leadership and doing the right thing when the rules don't fit the problem.",
+    "image": "/Elmi-hero-image.jpg"
   },
   "stats": [
     { "num": "2008", "label": "Launched the world's first HIV-positive to HIV-positive kidney transplant programme" },
