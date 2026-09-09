@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Talks — Elmi Muller</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html">Elmi <span>Muller</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+    <nav class="nav nav-links">
+      <a href="about.html">Story</a>
+      <a href="talks.html" class="active">Talks</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html" class="btn book-btn">Book Elmi</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="padding-bottom:32px;">
+  <div class="wrap" style="grid-template-columns:1fr;">
+    <div>
+      <div class="hero-eyebrow">Watch & listen</div>
+      <h1 style="max-width:18ch;">Talks and recordings</h1>
+      <p class="hero-sub">Search by title, topic or keyword to find a talk. Only current, stage-ready talks are featured here.</p>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="search-row">
+      <input type="search" data-talk-search placeholder="Search talks by title, topic or keyword…" aria-label="Search talks">
+    </div>
+    <div class="filters" data-talk-filters></div>
+    <div class="talk-list" data-talk-list></div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <div class="logo" style="color:var(--paper-on-deep);">Elmi <span>Muller</span></div>
+    </div>
+    <nav class="footer-links">
+      <a href="about.html">Story</a>
+      <a href="talks.html">Talks</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+  <div class="wrap footer-bottom">© <span id="year"></span> Elmi Muller. All rights reserved.</div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="script.js"></script>
+</body>
+</html>

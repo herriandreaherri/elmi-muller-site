@@ -1,0 +1,94 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Where uploaded photos go, and how they're referenced from content
+media_folder: "images"
+public_folder: "/images"
+
+site_url: https://example.netlify.app   # TODO: replace after deploy
+display_url: https://example.netlify.app
+
+collections:
+  - name: "site"
+    label: "Homepage & Story"
+    files:
+      - file: "content/site.json"
+        name: "site"
+        label: "Homepage content"
+        fields:
+          - { label: "Hero eyebrow", name: "hero", widget: "object", fields: [
+                { label: "Eyebrow", name: "eyebrow", widget: "string" },
+                { label: "Headline", name: "title", widget: "string" },
+                { label: "Subheadline", name: "subtitle", widget: "text" },
+              ] }
+          - label: "Stats strip (4 numbers)"
+            name: "stats"
+            widget: "list"
+            fields:
+              - { label: "Number / short label", name: "num", widget: "string" }
+              - { label: "Description", name: "label", widget: "string" }
+          - label: "Bio"
+            name: "bio"
+            widget: "object"
+            fields:
+              - label: "Paragraphs"
+                name: "paragraphs"
+                widget: "list"
+                field: { label: "Paragraph", name: "paragraph", widget: "text" }
+          - label: "Keynote topics"
+            name: "topics"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+          - label: "Testimonials"
+            name: "testimonials"
+            widget: "list"
+            fields:
+              - { label: "Quote", name: "quote", widget: "text" }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Role / organisation", name: "role", widget: "string", required: false }
+
+  - name: "talks"
+    label: "Talks & Recordings"
+    files:
+      - file: "content/talks.json"
+        name: "talks"
+        label: "Talks library"
+        fields:
+          - label: "Talks"
+            name: "talks"
+            widget: "list"
+            summary: "{{title}} — {{topic}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Topic", name: "topic", widget: "string", hint: "e.g. Leadership, Innovation, Ethics — used as a filter." }
+              - label: "Keywords"
+                name: "keywords"
+                widget: "list"
+                field: { label: "Keyword", name: "keyword", widget: "string" }
+                required: false
+              - { label: "Date", name: "date", widget: "string", required: false }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Video URL", name: "videoUrl", widget: "string", required: false, hint: "YouTube/Vimeo link, or leave blank." }
+              - { label: "Feature on homepage?", name: "featured", widget: "boolean", default: false }
+
+  - name: "events"
+    label: "Events"
+    files:
+      - file: "content/events.json"
+        name: "events"
+        label: "Speaking calendar"
+        fields:
+          - label: "Events"
+            name: "events"
+            widget: "list"
+            summary: "{{title}} — {{date}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Date", name: "date", widget: "string" }
+              - { label: "Location", name: "location", widget: "string" }
+              - { label: "Upcoming or past?", name: "type", widget: "select", options: ["upcoming", "past"] }
+              - { label: "Link (optional)", name: "link", widget: "string", required: false }
+              - { label: "Description", name: "description", widget: "text", required: false }

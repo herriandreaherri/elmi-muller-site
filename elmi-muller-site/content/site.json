@@ -1,0 +1,46 @@
+{
+  "hero": {
+    "eyebrow": "Transplant Surgeon, Speaker & Academic Leader",
+    "title": "Some ideas are worth breaking the rules for.",
+    "subtitle": "Elmi Muller pioneered a transplant programme the textbooks said couldn't work — and changed how the world thinks about risk, leadership and doing the right thing when the rules don't fit the problem."
+  },
+  "stats": [
+    { "num": "2008", "label": "Launched the world's first HIV-positive to HIV-positive kidney transplant programme" },
+    { "num": "20+", "label": "Years in transplant surgery and academic leadership" },
+    { "num": "1st", "label": "Woman Dean, Faculty of Medicine & Health Sciences, Stellenbosch University" },
+    { "num": "Add", "label": "[Replace with a stat you'd like to feature — e.g. countries spoken in, lives touched]" }
+  ],
+  "bio": {
+    "paragraphs": [
+      "Elmi Muller is a South African transplant surgeon and Dean of the Faculty of Medicine and Health Sciences at Stellenbosch University. In 2008, she pioneered the world's first programme to transplant kidneys from HIV-positive donors into HIV-positive recipients at Groote Schuur Hospital in Cape Town — a decision that broke with medical convention and went on to save thousands of lives, reshaping global transplant guidelines in the process.",
+      "She is past president of the Southern African Transplantation Society and serves as vice-president of The Transplantation Society (TTS). Her work has been recognised internationally, including a feature in The Lancet and the Shoprite Checkers Woman of the Year award.",
+      "[Add a paragraph here on what audiences can expect from Elmi on stage — her speaking style, the kinds of events she's spoken at, and what she wants organisers to know before booking her.]"
+    ]
+  },
+  "topics": [
+    {
+      "title": "Breaking rules that don't serve people",
+      "description": "[Placeholder] How Elmi challenged medical orthodoxy to build a transplant programme the guidelines said shouldn't exist — and what that means for leaders facing their own 'that's not how it's done' moment."
+    },
+    {
+      "title": "Leadership under pressure",
+      "description": "[Placeholder] Lessons from the operating theatre and the dean's office on making high-stakes decisions with incomplete information."
+    },
+    {
+      "title": "Ethics, innovation and change",
+      "description": "[Placeholder] A talk for organisations navigating disruption — on how to innovate responsibly when the stakes are real."
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "[Add a testimonial quote from someone who has hosted or heard Elmi speak]",
+      "name": "Name",
+      "role": "Organisation"
+    },
+    {
+      "quote": "[Add a second testimonial quote here]",
+      "name": "Name",
+      "role": "Organisation"
+    }
+  ]
+}

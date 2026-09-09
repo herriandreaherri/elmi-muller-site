@@ -1,0 +1,22 @@
+{
+  "talks": [
+    {
+      "title": "Add your first talk title here",
+      "topic": "Leadership",
+      "keywords": ["example", "leadership", "keynote"],
+      "date": "2026",
+      "description": "Replace with a short description of the talk — who it was for and what it covered. This is what appears in search results, so include the words people might search for.",
+      "videoUrl": "",
+      "featured": true
+    },
+    {
+      "title": "Add a second talk title here",
+      "topic": "Innovation",
+      "keywords": ["example", "innovation"],
+      "date": "2025",
+      "description": "Short description of the second talk.",
+      "videoUrl": "",
+      "featured": false
+    }
+  ]
+}

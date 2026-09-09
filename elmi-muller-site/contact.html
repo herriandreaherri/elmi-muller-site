@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book Elmi Muller</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html">Elmi <span>Muller</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+    <nav class="nav nav-links">
+      <a href="about.html">Story</a>
+      <a href="talks.html">Talks</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html" class="btn book-btn active">Book Elmi</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="padding-bottom:32px;">
+  <div class="wrap" style="grid-template-columns:1fr;">
+    <div>
+      <div class="hero-eyebrow">Get in touch</div>
+      <h1 style="max-width:16ch;">Book Elmi for your event</h1>
+      <p class="hero-sub">Tell us about your event and we'll come back to you with availability and a proposal.</p>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+
+    <!-- Netlify Forms: once deployed on Netlify, submissions appear in
+         Site settings → Forms. No backend code needed. -->
+    <form name="booking" method="POST" data-netlify="true" netlify-honeypot="company-website" class="form-grid">
+      <input type="hidden" name="form-name" value="booking">
+      <p class="full" style="display:none;">
+        <label>Don't fill this out if you're human: <input name="company-website"></label>
+      </p>
+
+      <div>
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" required>
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+      </div>
+
+      <div>
+        <label for="organisation">Organisation</label>
+        <input id="organisation" name="organisation" type="text">
+      </div>
+      <div>
+        <label for="event-date">Event date</label>
+        <input id="event-date" name="event-date" type="text" placeholder="e.g. 14 March 2027">
+      </div>
+
+      <div>
+        <label for="event-location">Event location / format</label>
+        <input id="event-location" name="event-location" type="text" placeholder="City, or 'Virtual'">
+      </div>
+      <div>
+        <label for="audience-size">Expected audience size</label>
+        <input id="audience-size" name="audience-size" type="text">
+      </div>
+
+      <div class="full">
+        <label for="message">Tell us about the event</label>
+        <textarea id="message" name="message" required placeholder="Audience, topic interests, budget range, anything else useful."></textarea>
+      </div>
+
+      <div class="full">
+        <button type="submit" class="btn btn-solid">Send enquiry</button>
+        <p class="form-note">Submissions are handled by Netlify Forms — no data is stored anywhere else. You'll be contacted directly by email.</p>
+      </div>
+    </form>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <div class="logo" style="color:var(--paper-on-deep);">Elmi <span>Muller</span></div>
+    </div>
+    <nav class="footer-links">
+      <a href="about.html">Story</a>
+      <a href="talks.html">Talks</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+  <div class="wrap footer-bottom">© <span id="year"></span> Elmi Muller. All rights reserved.</div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="script.js"></script>
+</body>
+</html>

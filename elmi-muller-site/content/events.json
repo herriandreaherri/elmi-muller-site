@@ -1,0 +1,20 @@
+{
+  "events": [
+    {
+      "title": "Add your next speaking engagement",
+      "date": "e.g. 12 March 2027",
+      "location": "City, Country",
+      "type": "upcoming",
+      "link": "",
+      "description": "Short line about the event or audience."
+    },
+    {
+      "title": "Add a past highlight",
+      "date": "2025",
+      "location": "City, Country",
+      "type": "past",
+      "link": "",
+      "description": "Short line about the event."
+    }
+  ]
+}

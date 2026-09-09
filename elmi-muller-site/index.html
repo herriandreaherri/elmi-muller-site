@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Elmi Muller — Speaker & Transplant Surgeon</title>
+<meta name="description" content="Elmi Muller — transplant surgeon, academic leader and keynote speaker on leadership, ethics and innovation under pressure.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html">Elmi <span>Muller</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+    <nav class="nav nav-links">
+      <a href="about.html">Story</a>
+      <a href="talks.html">Talks</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html" class="btn book-btn">Book Elmi</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <div class="hero-eyebrow" data-hero-eyebrow>Transplant Surgeon, Speaker & Academic Leader</div>
+      <h1 data-hero-title>Some ideas are worth breaking the rules for.</h1>
+      <p class="hero-sub" data-hero-sub>Elmi Muller pioneered a transplant programme the textbooks said couldn't work — and changed how the world thinks about risk, leadership and doing the right thing when the rules don't fit the problem.</p>
+      <div class="hero-cta">
+        <a href="contact.html" class="btn btn-solid">Book Elmi to speak</a>
+        <a href="talks.html" class="btn">Watch her talks</a>
+      </div>
+    </div>
+    <div class="hero-portrait">
+      <em>[Replace with a portrait of Elmi — swap the image via the admin panel]</em>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="stats" data-stats></div>
+</div>
+
+<section>
+  <div class="wrap bio-grid">
+    <div class="bio-portrait">[Add a second photo here]</div>
+    <div>
+      <div class="section-head" style="border-bottom:none; padding-bottom:0; margin-bottom:20px;">
+        <div>
+          <div class="kicker">Her story</div>
+          <h2>From the operating table to the stage</h2>
+        </div>
+      </div>
+      <div data-bio-paragraphs></div>
+      <a href="about.html" class="btn" style="margin-top:8px;">Read the full story</a>
+    </div>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="kicker">For organisers</div>
+        <h2>Keynote topics</h2>
+      </div>
+      <a href="contact.html" class="section-link">Check availability</a>
+    </div>
+    <div class="topic-list" data-topics></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="kicker">What people say</div>
+        <h2>From past audiences</h2>
+      </div>
+    </div>
+    <div class="testi-grid" data-testimonials></div>
+  </div>
+</section>
+
+<section class="section-dark cta-band">
+  <div class="wrap">
+    <div>
+      <div class="kicker">Ready to book?</div>
+      <h2>Bring Elmi's story to your next event.</h2>
+    </div>
+    <a href="contact.html" class="btn btn-light">Start an enquiry</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <div class="logo" style="color:var(--paper-on-deep);">Elmi <span>Muller</span></div>
+      <p style="margin-top:12px; max-width:32ch; color:rgba(239,237,229,0.65);">Transplant surgeon, academic leader and keynote speaker.</p>
+    </div>
+    <nav class="footer-links">
+      <a href="about.html">Story</a>
+      <a href="talks.html">Talks</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+  <div class="wrap footer-bottom">© <span id="year"></span> Elmi Muller. All rights reserved.</div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="script.js"></script>
+
+<!-- Netlify Identity: required so that "invite" and "reset password" email
+     links (which land here) can open the widget and let Elmi set a password
+     before going to /admin. Safe to leave in even if Identity isn't enabled yet. -->
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => { document.location.href = "/admin/"; });
+      }
+    });
+  }
+</script>
+</body>
+</html>
